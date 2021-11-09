@@ -5,9 +5,18 @@
 using namespace std;
 using namespace ds;
 
-/******************************************************************************
- * define function below
- *****************************************************************************/
+template<class T>
+void OrderedSet<T>::Insert(const T& item)
+{
+   for (int i=0; i<size; i++)
+   {
+     if (item!=data[i].value && size < data.Size())
+      {
+	data[i]=data[i-1]
+        size += 1;
+      }
+   }
+};
 
 int main()
 {
