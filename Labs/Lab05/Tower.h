@@ -17,8 +17,7 @@ class Tower{
   }
   
   Tower(const Tower&obj){
-    value=new int;
-    *value=*obj.value;
+    value=obj.value;
   }
   
   Tower&operator=(const Tower&.rhs){
