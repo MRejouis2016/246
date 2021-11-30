@@ -66,7 +66,7 @@ int OddMedian(Array<int>&data)
   int median = (arr[i]+arr[size-1])/2;
   for (int i=0; i<size; i++)
   {
-    if (data.size%2!=0)
+    if (size%2!=0)
     {
 	return median;
     }
