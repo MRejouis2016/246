@@ -91,7 +91,7 @@ string Alter(string str)
      }
      else
      {
-	return false;
+	return 0;
      }
    }
    return str;
