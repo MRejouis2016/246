@@ -164,6 +164,17 @@ namespace ds
 			}
 			return false;
 		}
+		
+		void GetAdjancies( const T& item, const int& value )
+		{
+			for (int i=0; i<8; i++)
+			{
+				for (int j=0; j<8; j++)
+				{
+					cout << arr[i][j] << ", ";
+				}
+			}
+		}
 
 		friend bool operator==(const Position& lhs,const Position& rhs)
 		{
@@ -272,7 +283,23 @@ namespace ds
 				grid[i] = (a)?(' '):('+');
 				states[i] = false;
 			}	
-		}	
+		}
+		
+		bool HasPath(const Path& p, const Position& q, const Position& r)
+		{
+			for (int i=0; i<64; i++)
+			{
+				for (int j=i; j<64; j++)
+				{
+					if (grid[i]==p)
+					{
+						cout << grid[i][j];
+					}
+				}
+			}
+			
+			return 0;
+		}
 
 		std::string ToString() const 
 		{
